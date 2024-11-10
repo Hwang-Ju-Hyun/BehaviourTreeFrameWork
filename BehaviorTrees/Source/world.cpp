@@ -87,7 +87,7 @@ void World::Initialize( CMultiAnim *pMA, std::vector< CTiny* > *pv_pChars, CSoun
 #else
 		g_trees.Initialize();		// initialize behavior tree
 
-	for( int i=0; i<3; i++ )
+	for( int i=0; i<10; i++ )
 	{
 		//Create game objects
 		char name[10] = "BTAgent";
@@ -104,21 +104,7 @@ void World::Initialize( CMultiAnim *pMA, std::vector< CTiny* > *pv_pChars, CSoun
 		g_trees.Register(name, "Follow_Captain");							// register agent to behavior tree
 		g_trees.GetAgentData(name).InitialTinyBlackBoard(npc);		// initialize local blackboard for each tiny
 	}
-
-	//char name[10] = "Captain";
-	//sprintf(name, "%s%d", name);
-	//GameObject* npc = new GameObject(g_database.GetNewObjectID(), OBJECT_NPC, name);
-	//
-	//D3DXVECTOR3 pos(0.0f, 0.0f, 0.0f);
-	//pos.x = g_random.RangeFloat();
-	//pos.z = g_random.RangeFloat();
-	//npc->CreateBody(100, pos);
-	//npc->CreateMovement();
-	//npc->CreateTiny(pMA, pv_pChars, pSM, dTimeCurrent, 1.0f, 0.0f, 0.0f);	//Color if needed
-	//g_database.Store(*npc);
-	//
-	//g_trees.Register(name, "Follow_Captain");							// register agent to behavior tree
-	//g_trees.GetAgentData(name).InitialTinyBlackBoard(npc);		// initialize local blackboard for each tiny
+	
 
 #endif
 

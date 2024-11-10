@@ -12,13 +12,14 @@ namespace BT
 
 	Status BT::L_GoToTop_Node::OnEnter(NodeData* nodedata_ptr)
 	{
+		LeafNode::OnEnter(nodedata_ptr);
+
 		AgentBTData& agentdata = nodedata_ptr->GetAgentData();
 		GameObject* self = agentdata.GetGameObject();
 		TinyBlackBoard* tinybb = agentdata.GetLocalBlackBoard<TinyBlackBoard>();
 
-		tinybb->m_mouseClick = false;
-						
-
+		tinybb->m_mouseClick = false;				
+		 
 		self->SetTargetPOS({ 0.5f,0.0f,1.0f });
 		self->SetSpeedStatus(TinySpeedStatus::TS_JOG);
 		
@@ -28,6 +29,7 @@ namespace BT
 
 	void BT::L_GoToTop_Node::OnExit(NodeData* nodedata_ptr)
 	{
+		LeafNode::OnExit(nodedata_ptr);
 	}
 
 	Status BT::L_GoToTop_Node::OnUpdate(float dt, NodeData* nodedata_ptr)
@@ -44,7 +46,7 @@ namespace BT
 
 	Status BT::L_GoToTop_Node::OnSuspend(NodeData* nodedata_ptr)
 	{
-		return Status();
+		return LeafNode::OnSuspend(nodedata_ptr);
 	}
 
 }
