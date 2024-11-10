@@ -1,11 +1,13 @@
 #include "Stdafx.h"
 #include "L_GoToTop_Node.h"
+#include "TimerNodeData.h"
+#include "LineUpNodeData.h"
 
 namespace BT
 {
 	void BT::L_GoToTop_Node::OnInitial(NodeData* nodedata_ptr)
 	{
-		LeafNode::OnInitial(nodedata_ptr);
+		LeafNode::OnInitial(nodedata_ptr);				
 	}
 
 	Status BT::L_GoToTop_Node::OnEnter(NodeData* nodedata_ptr)
@@ -14,9 +16,12 @@ namespace BT
 		GameObject* self = agentdata.GetGameObject();
 		TinyBlackBoard* tinybb = agentdata.GetLocalBlackBoard<TinyBlackBoard>();
 
-		tinybb->m_mouseClick = false;		
+		tinybb->m_mouseClick = false;
+						
+
 		self->SetTargetPOS({ 0.5f,0.0f,1.0f });
 		self->SetSpeedStatus(TinySpeedStatus::TS_JOG);
+		
 		SetTinySpeed(self);
 		return Status::BT_RUNNING;
 	}

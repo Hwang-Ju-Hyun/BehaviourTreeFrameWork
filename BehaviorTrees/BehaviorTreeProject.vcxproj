@@ -129,6 +129,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CaptainNodeData.cpp" />
+    <ClCompile Include="LineUpNodeData.cpp" />
     <ClCompile Include="L_GoToTop_Node.cpp" />
     <ClCompile Include="L_Is_Captain_Node.cpp" />
     <ClCompile Include="L_LineUp_Node.cpp" />
@@ -283,8 +285,11 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Source\world.cpp" />
+    <ClCompile Include="TimerNodeData.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CaptainNodeData.h" />
+    <ClInclude Include="LineUpNodeData.h" />
     <ClInclude Include="L_GoToTop_Node.h" />
     <ClInclude Include="L_Is_Captain_Node.h" />
     <ClInclude Include="L_LineUp_Node.h" />
@@ -440,6 +445,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="Source\world.h" />
+    <ClInclude Include="TimerNodeData.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Source\DXUT\directx.ico" />

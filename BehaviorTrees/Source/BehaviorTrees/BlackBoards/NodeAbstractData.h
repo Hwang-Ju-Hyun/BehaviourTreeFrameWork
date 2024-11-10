@@ -20,5 +20,7 @@ namespace BT
 	// base class for custom node data
 	struct NodeAbstractData
 	{
+		NodeAbstractData();
+		~NodeAbstractData();
 	};
 }

@@ -137,9 +137,9 @@ namespace BT
 	Returns:        T*:		Pointer of local blackboard.
 	*---------------------------------------------------------------------------*/
 	template <typename T>
-	T *AgentBTData::GetLocalBlackBoard(void)
+	T* AgentBTData::GetLocalBlackBoard(void)
 	{
-		return static_cast<T *>(m_blackboard.get());
+		return static_cast<T*>(m_blackboard.get());
 	}
 
 	/*--------------------------------------------------------------------------*

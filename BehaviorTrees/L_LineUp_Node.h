@@ -7,6 +7,9 @@ namespace BT
 	class L_LineUp_Node :
 		public LeafNode
 	{
+	private:
+		D3DXVECTOR3 LineupPos = { 0.f,0.f,0.f };
+		static float LineUpoffset;
 	protected:
 		// Only run when initializing the node
 		virtual void OnInitial(NodeData* nodedata_ptr) override;

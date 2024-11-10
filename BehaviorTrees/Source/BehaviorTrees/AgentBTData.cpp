@@ -110,8 +110,7 @@ Returns:        GameObject*:	game object associated to agent.
 *---------------------------------------------------------------------------*/
 GameObject *AgentBTData::GetGameObject(void)
 {
-	TinyBlackBoard *tinybb = static_cast<TinyBlackBoard *>(m_blackboard.get());
-
+	TinyBlackBoard *tinybb = static_cast<TinyBlackBoard *>(m_blackboard.get());	
 	if (tinybb)
 		return tinybb->m_npc;
 	else
@@ -149,12 +148,7 @@ void AgentBTData::InitialTinyBlackBoard(GameObject *npc)
 	InitialLocalBlackBoard<TinyBlackBoard>();
 	TinyBlackBoard *tinybb = GetLocalBlackBoard<TinyBlackBoard>();
 
-	tinybb->m_npc = npc;
-	if (strcmp(tinybb->m_npc->GetName(), "BTAgent0")==0)
-	{
-		tinybb->SetCaptain(tinybb->m_npc);
-		tinybb->SetIsCaptain(true);
-	}
+	tinybb->m_npc = npc;	
 	npc->SetHasBehaviorTreeFlag(true);
 }
 

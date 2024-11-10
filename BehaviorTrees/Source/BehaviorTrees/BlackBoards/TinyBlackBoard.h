@@ -21,7 +21,6 @@ namespace BT
 	struct TinyBlackBoard : public AgentAbstractData
 	{
 		/* variable */
-
 		GameObject *m_npc;				// agent's game object pointer
 
 		// for mouse click only, change later
@@ -39,16 +38,5 @@ namespace BT
 		// Handle messages
 		virtual void OnMessage(void) override;
 
-
-	public:
-		GameObject* m_pCaptain = nullptr;
-		D3DXVECTOR3 m_LineUpPOS;
-		bool m_bIsCaptain = false;
-		void SetCaptain(GameObject* _captain) { m_pCaptain = _captain; }
-		GameObject* GetCaptain()const { return m_pCaptain; }
-		void SetIsCaptain(bool _cap) { m_bIsCaptain = _cap; }
-		bool GetIsCaptain()const { return m_bIsCaptain; }
-		void SetLineUpPos(D3DXVECTOR3 _lineUpPos) { m_LineUpPOS = _lineUpPos; }
-		D3DXVECTOR3 GetLineUpPos()const { return m_LineUpPOS; }
 	};
 }

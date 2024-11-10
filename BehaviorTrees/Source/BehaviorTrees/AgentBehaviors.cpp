@@ -73,10 +73,21 @@ GameObject* BT::GetCaptainAgent()
 
 	for (iter = list.begin(); iter != list.end(); iter++)
 	{
-		
+		if ((*iter) != nullptr&&strcmp((*iter)->GetName(),"BTAgent0") == 0)
+		{
+			return (*iter);
+		}
 	}
 
 	return nullptr;
+}
+
+int BT::GetAgentCount()
+{
+	dbCompositionList list;
+	g_database.ComposeList(list, OBJECT_NPC);
+
+	return list.size();
 }
 
 /*--------------------------------------------------------------------------*

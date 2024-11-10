@@ -12,3 +12,16 @@ written consent of DigiPen Institute of Technology is prohibited.
 /******************************************************************************/
 
 #include <Stdafx.h>
+
+namespace BT
+{
+	BT::NodeAbstractData::NodeAbstractData()
+	{
+	}
+
+	BT::NodeAbstractData::~NodeAbstractData()
+	{
+	}
+
+}
+

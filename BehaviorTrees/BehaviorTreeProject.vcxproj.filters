@@ -229,6 +229,15 @@
     <ClCompile Include="L_Is_Captain_Node.cpp">
       <Filter>BehaviorTrees\Nodes\Leaf\IsCaptain</Filter>
     </ClCompile>
+    <ClCompile Include="TimerNodeData.cpp">
+      <Filter>BehaviorTrees\BlackBoards\TimerNodeData</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainNodeData.cpp">
+      <Filter>BehaviorTrees\BlackBoards\CapatinNodeData</Filter>
+    </ClCompile>
+    <ClCompile Include="LineUpNodeData.cpp">
+      <Filter>BehaviorTrees\BlackBoards\LineUpNodeData</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\MultiAnimation.h" />
@@ -476,6 +485,15 @@
     <ClInclude Include="L_Is_Captain_Node.h">
       <Filter>BehaviorTrees\Nodes\Leaf\IsCaptain</Filter>
     </ClInclude>
+    <ClInclude Include="TimerNodeData.h">
+      <Filter>BehaviorTrees\BlackBoards\TimerNodeData</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainNodeData.h">
+      <Filter>BehaviorTrees\BlackBoards\CapatinNodeData</Filter>
+    </ClInclude>
+    <ClInclude Include="LineUpNodeData.h">
+      <Filter>BehaviorTrees\BlackBoards\LineUpNodeData</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Animation">
@@ -540,6 +558,15 @@
     </Filter>
     <Filter Include="BehaviorTrees\Nodes\Leaf\IsCaptain">
       <UniqueIdentifier>{a5c4c00f-21a4-4d0c-ae05-b3f6abe13998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviorTrees\BlackBoards\TimerNodeData">
+      <UniqueIdentifier>{7f00e884-32a7-49ce-bcbf-755f43c1f493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviorTrees\BlackBoards\CapatinNodeData">
+      <UniqueIdentifier>{9f0cf987-30be-429c-bde3-0c97f31bd9d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviorTrees\BlackBoards\LineUpNodeData">
+      <UniqueIdentifier>{2f9411de-4e5f-4156-bdb1-735f794348f6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
