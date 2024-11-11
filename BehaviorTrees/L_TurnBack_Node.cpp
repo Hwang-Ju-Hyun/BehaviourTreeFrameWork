@@ -15,7 +15,7 @@ namespace BT
 
 		AgentBTData& agentdata = nodedata_ptr->GetAgentData();
 		GameObject* self = agentdata.GetGameObject();
-		TinyBlackBoard* tinybb = agentdata.GetLocalBlackBoard<TinyBlackBoard>();				
+		TinyBlackBoard* tinybb = agentdata.GetLocalBlackBoard<TinyBlackBoard>();
 
 		D3DXVECTOR3 objs_dir = {0.0f,0.f,1.0f };
 		D3DXVECTOR3 cap_dir = { 0.0f,0.f,-1.0f };
@@ -26,8 +26,7 @@ namespace BT
 		}
 		else
 		{
-			self->GetBody().SetDir(objs_dir);
-			
+			self->GetBody().SetDir(objs_dir);			
 		}		
 		
 		tinybb->m_vTurnBack.insert(self);

@@ -66,3 +66,5 @@ written consent of DigiPen Institute of Technology is prohibited.
 #include <BehaviorTrees/../../L_TurnBack_Node.h>
 #include <BehaviorTrees/../../D_Timer.h>
 #include <BehaviorTrees/../../L_TurnAroundRandomly_Node.h>
+#include <BehaviorTrees/../../L_Red_Node.h>
+#include <BehaviorTrees/../../L_Scale_Node.h>

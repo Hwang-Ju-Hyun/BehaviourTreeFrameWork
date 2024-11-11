@@ -247,6 +247,12 @@
     <ClCompile Include="L_TurnAroundRandomly_Node.cpp">
       <Filter>BehaviorTrees\Nodes\Leaf\TurnAroundRandom</Filter>
     </ClCompile>
+    <ClCompile Include="L_Red_Node.cpp">
+      <Filter>BehaviorTrees\Nodes\Leaf\SetColor</Filter>
+    </ClCompile>
+    <ClCompile Include="L_Scale_Node.cpp">
+      <Filter>BehaviorTrees\Nodes\Leaf\SetScale</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\MultiAnimation.h" />
@@ -512,6 +518,12 @@
     <ClInclude Include="L_TurnAroundRandomly_Node.h">
       <Filter>BehaviorTrees\Nodes\Leaf\TurnAroundRandom</Filter>
     </ClInclude>
+    <ClInclude Include="L_Red_Node.h">
+      <Filter>BehaviorTrees\Nodes\Leaf\SetColor</Filter>
+    </ClInclude>
+    <ClInclude Include="L_Scale_Node.h">
+      <Filter>BehaviorTrees\Nodes\Leaf\SetScale</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Animation">
@@ -594,6 +606,12 @@
     </Filter>
     <Filter Include="BehaviorTrees\Nodes\Leaf\TurnAroundRandom">
       <UniqueIdentifier>{f954998a-abd6-48ad-bc2d-75d8d9d9cb64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviorTrees\Nodes\Leaf\SetColor">
+      <UniqueIdentifier>{f792174a-9725-45c1-a3b9-d2d464e18d47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviorTrees\Nodes\Leaf\SetScale">
+      <UniqueIdentifier>{529e2858-90ef-44cb-871a-ffc53f02ae62}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

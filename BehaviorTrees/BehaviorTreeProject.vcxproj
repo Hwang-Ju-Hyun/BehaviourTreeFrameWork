@@ -132,11 +132,13 @@
     <ClCompile Include="CaptainNodeData.cpp" />
     <ClCompile Include="D_Timer.cpp" />
     <ClCompile Include="LineUpNodeData.cpp" />
+    <ClCompile Include="L_Red_Node.cpp" />
     <ClCompile Include="L_GoToTop_Node.cpp" />
     <ClCompile Include="L_Is_Captain_Node.cpp" />
     <ClCompile Include="L_LineUp_Node.cpp" />
     <ClCompile Include="L_New_Node.cpp" />
     <ClCompile Include="L_New_Node2.cpp" />
+    <ClCompile Include="L_Scale_Node.cpp" />
     <ClCompile Include="L_TurnAroundRandomly_Node.cpp" />
     <ClCompile Include="L_TurnBack_Node.cpp" />
     <ClCompile Include="Source\AllocHierarchy.cpp" />
@@ -294,11 +296,13 @@
     <ClInclude Include="CaptainNodeData.h" />
     <ClInclude Include="D_Timer.h" />
     <ClInclude Include="LineUpNodeData.h" />
+    <ClInclude Include="L_Red_Node.h" />
     <ClInclude Include="L_GoToTop_Node.h" />
     <ClInclude Include="L_Is_Captain_Node.h" />
     <ClInclude Include="L_LineUp_Node.h" />
     <ClInclude Include="L_New_Node.h" />
     <ClInclude Include="L_New_Node2.h" />
+    <ClInclude Include="L_Scale_Node.h" />
     <ClInclude Include="L_TurnAroundRandomly_Node.h" />
     <ClInclude Include="L_TurnBack_Node.h" />
     <ClInclude Include="Source\AIReasoner.h" />
