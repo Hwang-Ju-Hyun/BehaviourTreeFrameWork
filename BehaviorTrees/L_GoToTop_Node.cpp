@@ -21,7 +21,7 @@ namespace BT
 		tinybb->m_mouseClick = false;				
 		 
 		self->SetTargetPOS({ 0.5f,0.0f,1.0f });
-		self->SetSpeedStatus(TinySpeedStatus::TS_JOG);
+		self->SetSpeedStatus(TinySpeedStatus::TS_WALK);
 		
 		SetTinySpeed(self);
 		return Status::BT_RUNNING;
@@ -39,7 +39,11 @@ namespace BT
 		GameObject* self = nodedata_ptr->GetAgentData().GetGameObject();
 
 		if (IsNear(self->GetBody().GetPos(), self->GetTargetPOS()))
+		{
+			nodedata_ptr->GetAgentData().GetLocalBlackBoard<TinyBlackBoard>()->m_bArrived = true;
 			return Status::BT_SUCCESS;
+		}
+			
 
 		return Status::BT_RUNNING;
 	}

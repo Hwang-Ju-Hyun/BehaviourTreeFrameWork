@@ -41,6 +41,13 @@ Arguments:      None.
 
 Returns:        None.
 *---------------------------------------------------------------------------*/
+std::set<GameObject*> TinyBlackBoard::m_vAllLineUpReadyVec = {};
+std::set<GameObject*> TinyBlackBoard::m_vTurnBack = {};
+std::set<GameObject*> TinyBlackBoard::m_vStandBy = {};
+float TinyBlackBoard::AccTime = 0.f;
+int TinyBlackBoard::m_iIncorectCount = 0;
+D3DXVECTOR3 TinyBlackBoard::cap_dir = { 0.f,0.f,0.f };
+
 void TinyBlackBoard::OnMessage(void)
 {
 	// default behavior is to drop all messages

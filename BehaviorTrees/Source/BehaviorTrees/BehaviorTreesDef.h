@@ -63,3 +63,6 @@ written consent of DigiPen Institute of Technology is prohibited.
 #include <BehaviorTrees/../../L_GoToTop_Node.h>
 #include <BehaviorTrees/../../L_LineUp_Node.h>
 #include <BehaviorTrees/../../L_Is_Captain_Node.h>
+#include <BehaviorTrees/../../L_TurnBack_Node.h>
+#include <BehaviorTrees/../../D_Timer.h>
+#include <BehaviorTrees/../../L_TurnAroundRandomly_Node.h>

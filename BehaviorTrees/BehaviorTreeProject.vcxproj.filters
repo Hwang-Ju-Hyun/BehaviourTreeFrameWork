@@ -172,9 +172,6 @@
     <ClCompile Include="Source\BehaviorTrees\Nodes\ControlFlow\C_Sequencer.cpp">
       <Filter>BehaviorTrees\Nodes\ControlFlow</Filter>
     </ClCompile>
-    <ClCompile Include="Source\BehaviorTrees\Nodes\Decorator\D_Inverter.cpp">
-      <Filter>BehaviorTrees\Nodes\Decorator</Filter>
-    </ClCompile>
     <ClCompile Include="Source\BehaviorTrees\AgentBehaviors.cpp">
       <Filter>BehaviorTrees</Filter>
     </ClCompile>
@@ -237,6 +234,18 @@
     </ClCompile>
     <ClCompile Include="LineUpNodeData.cpp">
       <Filter>BehaviorTrees\BlackBoards\LineUpNodeData</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BehaviorTrees\Nodes\Decorator\D_Inverter.cpp">
+      <Filter>BehaviorTrees\Nodes\Decorator\Repeater</Filter>
+    </ClCompile>
+    <ClCompile Include="L_TurnBack_Node.cpp">
+      <Filter>BehaviorTrees\Nodes\Leaf\TurnBack</Filter>
+    </ClCompile>
+    <ClCompile Include="D_Timer.cpp">
+      <Filter>BehaviorTrees\Nodes\Decorator\Repeater</Filter>
+    </ClCompile>
+    <ClCompile Include="L_TurnAroundRandomly_Node.cpp">
+      <Filter>BehaviorTrees\Nodes\Leaf\TurnAroundRandom</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -428,9 +437,6 @@
     <ClInclude Include="Source\BehaviorTrees\Nodes\ControlFlow\C_Selector.h">
       <Filter>BehaviorTrees\Nodes\ControlFlow</Filter>
     </ClInclude>
-    <ClInclude Include="Source\BehaviorTrees\Nodes\Decorator\D_Inverter.h">
-      <Filter>BehaviorTrees\Nodes\Decorator</Filter>
-    </ClInclude>
     <ClInclude Include="Source\BehaviorTrees\AgentBehaviors.h">
       <Filter>BehaviorTrees</Filter>
     </ClInclude>
@@ -493,6 +499,18 @@
     </ClInclude>
     <ClInclude Include="LineUpNodeData.h">
       <Filter>BehaviorTrees\BlackBoards\LineUpNodeData</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BehaviorTrees\Nodes\Decorator\D_Inverter.h">
+      <Filter>BehaviorTrees\Nodes\Decorator\Repeater</Filter>
+    </ClInclude>
+    <ClInclude Include="L_TurnBack_Node.h">
+      <Filter>BehaviorTrees\Nodes\Leaf\TurnBack</Filter>
+    </ClInclude>
+    <ClInclude Include="D_Timer.h">
+      <Filter>BehaviorTrees\Nodes\Decorator\Repeater</Filter>
+    </ClInclude>
+    <ClInclude Include="L_TurnAroundRandomly_Node.h">
+      <Filter>BehaviorTrees\Nodes\Leaf\TurnAroundRandom</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -567,6 +585,15 @@
     </Filter>
     <Filter Include="BehaviorTrees\BlackBoards\LineUpNodeData">
       <UniqueIdentifier>{2f9411de-4e5f-4156-bdb1-735f794348f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviorTrees\Nodes\Decorator\Repeater">
+      <UniqueIdentifier>{71df3ec3-2211-401a-8c40-b7712288fb2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviorTrees\Nodes\Leaf\TurnBack">
+      <UniqueIdentifier>{6b21775d-64a9-4972-bf53-95f79e2c7164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviorTrees\Nodes\Leaf\TurnAroundRandom">
+      <UniqueIdentifier>{f954998a-abd6-48ad-bc2d-75d8d9d9cb64}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

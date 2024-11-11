@@ -19,3 +19,7 @@ REGISTER_LEAF(L_NewNode2, "Action:  Test")
 REGISTER_LEAF(L_GoToTop_Node, "Action: captain obj go to Top")
 REGISTER_LEAF(L_LineUp_Node, "Action:  Other objs Lineup")
 REGISTER_LEAF(L_Is_Captain_Node, "Action:  Is obj the captain")
+REGISTER_LEAF(L_TurnBack_Node, "Action: Obj turn back")
+REGISTER_LEAF(L_TurnAroundRandomly_Node, "Action: Turn Around Randomly")
+
+REGISTER_DECORATOR(D_Timer, "Action: Loop")

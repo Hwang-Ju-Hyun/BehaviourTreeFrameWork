@@ -37,6 +37,18 @@ namespace BT
 
 		// Handle messages
 		virtual void OnMessage(void) override;
-
+	public:
+		int m_iNumberOfObjs = 0;
+		int m_iIndex;	
+	public:
+		static std::set<GameObject*> m_vAllLineUpReadyVec;
+		static std::set<GameObject*> m_vTurnBack;
+		static std::set<GameObject*> m_vStandBy;
+		static float AccTime;
+		static int m_iIncorectCount;
+		bool m_bArrived=false;
+		bool m_bAmICap=false;
+		bool m_bInCorrectDir = false;
+		static D3DXVECTOR3 cap_dir;
 	};
 }

@@ -11,7 +11,8 @@ namespace BT
 		TimerNodeData();
 		~TimerNodeData();
 	public:
-		float temp_time = 0.f;
+		float max_time = 3.f;
+		float acc_time = 0.f;
 	};
 }
 
